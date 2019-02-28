@@ -2,12 +2,12 @@
 /**
  * CONDICIONALES 
  * IF:
-    if(condicion){
-        instrucciones
-   }
-    else{
-        otras instrucciones
-   }
+ *   if(condicion){
+ *       instrucciones
+ *  }
+ *   else{
+ *       otras instrucciones
+ *  }
  */
 $color ="azul";
 if($color=="rojo"){
@@ -19,10 +19,10 @@ else{
 
 /**
  * OPERADORES DE CONDICION
-   ==   igual
-   ===  identico    (mismo tipo de dato)
-   !=   distinto
-   !==  no identico
+ *  ==   igual
+ *  ===  identico    (mismo tipo de dato)
+ *  !=   distinto
+ *  !==  no identico
  */
 
 $year=2020;
