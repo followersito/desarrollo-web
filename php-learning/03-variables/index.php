@@ -1,8 +1,10 @@
 <?php
+$mi_variable = 'Hola mundo desde una variable';
+$numero = 44;
+$estado = true;
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+echo '<h1>'.$mi_variable.'</h1>';
+echo $numero."<br>";
+$numero=144;
+echo $numero;
+?>
