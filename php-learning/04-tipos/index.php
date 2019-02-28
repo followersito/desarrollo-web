@@ -9,9 +9,19 @@
  * Objetos
  */
 $numero = 100;
-echo gettype($numero).'<br>';
+//echo gettype($numero).'<br>';
 $decimal = 27.9;
-echo gettype($decimal).'<br>';
+//echo gettype($decimal).'<br>';
 $texto = 'Hola soy un texto';
-echo gettype($texto);
+//echo gettype($texto);
+$usuarios[]="Ivan";
+$usuarios[]="Carlos";
+echo "Soy un texto $numero <br>";       //Lento para navegador
+echo 'Soy un texto $numero <br>';       //Con comillas simples no funciona así
+echo 'Soy un texto '.$numero.'<br>';    //Recomendado concatenar con ''.''
+//Debugear
+$mi_nombre="Carlos Melchor";
+//var_dump($mi_nombre);       Muestra los detalles de la variable
+//var_dump($usuarios);
+
 ?>
