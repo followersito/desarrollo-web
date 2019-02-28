@@ -19,6 +19,7 @@ $usuarios[]="Carlos";
 echo "Soy un texto $numero <br>";       //Lento para navegador
 echo 'Soy un texto $numero <br>';       //Con comillas simples no funciona así
 echo 'Soy un texto '.$numero.'<br>';    //Recomendado concatenar con ''.''
+echo 'El usuario 2 es: '.$usuarios[1].'<br>';
 //Debugear
 $mi_nombre="Carlos Melchor";
 //var_dump($mi_nombre);       Muestra los detalles de la variable
