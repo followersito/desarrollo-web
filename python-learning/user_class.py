@@ -9,12 +9,18 @@ class Usuario:
     def __generate_password(self, password):
         return password.upper()
 
-    def get_password(self):
+    @property
+    def password(self):
         return self.__password
 
+    @password.setter
+    def password(self, value):
+        self.__password = self.__generate_password(value)
 
 ivan = Usuario('cmelchor', 'root_password', 'ivanmelchormejia@gmail.com')
 print(ivan.username)
 # print(ivan.__password)
 print(ivan.email)
-print(ivan.get_password())
+print(ivan.password)
+ivan.password="New password"
+print(ivan.password)
