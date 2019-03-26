@@ -17,6 +17,7 @@ class Usuario:
     def password(self, value):
         self.__password = self.__generate_password(value)
 
+
 ivan = Usuario('cmelchor', 'root_password', 'ivanmelchormejia@gmail.com')
 print(ivan.username)
 # print(ivan.__password)
