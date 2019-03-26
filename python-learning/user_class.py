@@ -3,7 +3,7 @@
 class Usuario:
     def __init__(self, username, password, email):
         self.username = username
-        self.__password = self.__generate_password(password)      # Con el "__" se asigna como atributo privado
+        self.__password = self.__generate_password(password)      # Con el "__" se asigna como atributo privado y no permite modificaciones
         self.email = email
     
     def __generate_password(self, password):

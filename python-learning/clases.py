@@ -20,7 +20,7 @@ class Persona:
 
 
 # Se crea la instancia de la clase (Objeto)
-persona = Persona("3003-41644-0101", "Ivan", "Melchor", True)
+persona = Persona("3003-41644-0101", "Ivan", "Melchor", False)
 print(persona.dpi)
 persona.hablar()
 persona.caminar()
