@@ -1,8 +1,9 @@
 {% extends 'core/base.html' %}
 {% block title %} Portada {% endblock %}
-{% block content %}
 
-<h1>Esto es la portada</h1>
-<p>Página de inicio de la web personal<p> 
+{% block background %}{% load static %}{% static 'core/img/home-bg.jpg' %}{% endblock %}
 
+{% block headers %}
+<h1>Iván Melchor</h1>
+<span class="subheading">Página personal</span>
 {% endblock %}
