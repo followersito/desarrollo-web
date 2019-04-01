@@ -21,7 +21,11 @@
               </p>
               <p class="mb-0 mbt">
                 <span class="section-heading-under">Publicado por <em><b>{{entry.author}}</b></em> en 
-                <em><a href="#" class="link">{{}}</a></em></span>
+                <em>
+                {% for category in entry.categories.all %}
+                   <a href = "{% url 'category' category.id %}" class="link">{{category.name}}</a>{% if not forloop.last %},{% endif %}      <!-- Tag para verificar el numero de loop -->
+                {% endfor %} 
+                </a></em></span>
               </p>
             </div>
 
