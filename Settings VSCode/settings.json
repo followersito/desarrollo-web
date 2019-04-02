@@ -1,0 +1,37 @@
+{
+    "editor.minimap.enabled": false,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "editor.fontFamily": "'inconsolata'",
+    "editor.fontSize": 14,
+    "editor.fontLigatures": true,
+    "git.autofetch": true,
+    "python.linting.pylintArgs": [
+        "--errors-only",
+        "--load-plugins",
+        "pylint_django"
+    ],
+    //"files.associations": {
+    //  "*.html": "html"
+    //}
+    "workbench.iconTheme": "vscode-icons",
+    "editor.cursorBlinking": "blink",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.occurrencesHighlight": false,
+    "editor.renderIndentGuides": false,
+    "editor.roundedSelection": false,
+    "editor.scrollBeyondLastLine": false,
+    "explorer.decorations.colors": false,
+    "explorer.openEditors.visible": 0,
+    "window.zoomLevel": 0,
+    "workbench.activityBar.visible": false,
+    "workbench.editor.showIcons": false,
+    "workbench.startupEditor": "none",
+    "workbench.statusBar.feedback.visible": false,
+    "editor.matchBrackets": false,
+    "subtleBrackets.style": {
+      "borderWidth": "1px",
+      "borderColor": "#528BFF"
+    },
+    "workbench.colorTheme": "Atomize",
+}
