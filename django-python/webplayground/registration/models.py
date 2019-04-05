@@ -18,6 +18,9 @@ class Profile(models.Model):
     bio = models.TextField(null=True, blank=True)
     link = models.URLField(max_length=200,null=True, blank=True)
 
+    class Meta:
+        # Ordena a partir del nombre de usuario haciendo referencia al Usuario
+        ordering = ['user__username'] 
 
 # Método que asegura y crea un Perfil para la instancia de Usuario cuando es creado un Usuario
 @receiver(post_save, sender=User)
