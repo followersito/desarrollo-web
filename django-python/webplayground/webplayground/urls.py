@@ -17,25 +17,27 @@ from django.contrib import admin
 from django.urls import path, include, re_path
 from pages.urls import pages_patterns
 from profiles.urls import profile_patterns
+from messenger.urls import messenger_patterns
 from django.conf import settings
 # from jet_django.urls import jet_urls
-from django.conf.urls import url
+#from django.conf.urls import url
 
 
 urlpatterns = [
     path('', include('core.urls')),
     path('pages/', include(pages_patterns)),
-    url(r'^jet/', include(('jet.urls', 'jet'))),
+ #   url(r'^jet/', include(('jet.urls', 'jet'))),
    # url(r'^admin/', include(admin.site.urls)),
     path('admin/', admin.site.urls),
     # Paths de autenticación
     path('accounts/', include('django.contrib.auth.urls')),
     path('accounts/', include('registration.urls')),
     path('profiles/', include(profile_patterns)),
+    # Paths de messenger
+    path('messenger/', include(messenger_patterns)),
    # url(r'^jet_api/', include(jet_urls)),
 ]
 
 if settings.DEBUG:
     from django.conf.urls.static import static
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    

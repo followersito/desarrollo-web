@@ -5,8 +5,10 @@ from registration.models import Profile
 from django.views.generic.detail import DetailView
 
 # Create your views here.
+# Vista que lista los perfiles existentes
 class ProfileListView(ListView):
     model = Profile
+    # Template que usará la vista
     template_name = 'profiles/profile_list.html'
     paginate_by = 2
 
