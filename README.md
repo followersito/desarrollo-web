@@ -1,4 +1,4 @@
 # DESARROLLO WEB
 Código utilizado en desarrollo web.
 # Inicializar entorno web
-![](entorno-virtual.PNG)
+![](desarrollo-web/django-python/entorno-virtual.PNG)
