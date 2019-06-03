@@ -9,3 +9,6 @@ Código utilizado en desarrollo web (Front end y Back end).
 
 # Desplegar proyecto de Django con nginx
 Docs: https://medium.com/@_christopher/deploying-my-django-app-to-a-real-server-part-i-de78962e95ac
+
+# Paquetes instalados en entorno virtual (pip-list)
+![](django2-pip-list.PNG)
