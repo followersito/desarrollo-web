@@ -10,6 +10,7 @@
         <h2 class="section-heading mb-4">{{page.title}}</h2>
         <div>
           {{page.content|safe}}
+          <img src="https://www.appsheet.com/fsimage.png?filename={{page.img_url}}&tablesource=%2Fappsheet%2Fdata%2FBCM-538752%2Fempty.txt&datasource=office365&tableprovider=office365&usesCloudStore=False&userid=237954&width=600">
           {% if request.user.is_staff %}
             <p><a href="{% url 'pages:update' page.id %}">Editar</a></p>
           {% endif %}

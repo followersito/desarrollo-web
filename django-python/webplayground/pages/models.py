@@ -7,6 +7,7 @@ class Page(models.Model):
     order = models.SmallIntegerField(verbose_name="Orden", default=0)
     created = models.DateTimeField(auto_now_add=True, verbose_name="Fecha de creación")
     updated = models.DateTimeField(auto_now=True, verbose_name="Fecha de edición")
+    img_url = models.CharField(verbose_name="Imagen", max_length=400, null=True, blank=True)
 
     class Meta:
         verbose_name = "página"

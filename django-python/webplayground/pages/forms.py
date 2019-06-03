@@ -8,12 +8,13 @@ class PageForm(forms.ModelForm):
     class Meta:
         model = Page
         # Campos a mostrar
-        fields = ['title','content','order']
+        fields = ['title','content','order','img_url']
         # Características individuales de cada atributo, esto se mostrará en el formulario y cambiará la forma que se ve
         widgets = {
             'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder':'Título'}),
             'content': forms.Textarea(attrs={'class': 'form-control'}),
             'order': forms.NumberInput(attrs={'class': 'form-control', 'placeholder':'Orden'}),
+            'img_url': forms.TextInput(attrs={'class': 'form-control', 'placeholder':'URL de la imagen'}),
         }
         # Elejimos que información se mostrará en la parte de las label 'atributo':'valor a mostrar'
         labels = {
