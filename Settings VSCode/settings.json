@@ -12,9 +12,8 @@
         "pylint_django"
     ],
     //"files.associations": {
-    //  "*.html": "html"
-    //}
-    "workbench.iconTheme": "vscode-icons",
+    //"*.html": "html"
+    //},
     "editor.cursorBlinking": "blink",
     "editor.hideCursorInOverviewRuler": true,
     "editor.occurrencesHighlight": false,
@@ -34,4 +33,24 @@
       "borderColor": "#528BFF"
     },
     "workbench.colorTheme": "Atomize",
+    "git.enableSmartCommit": true,
+    "beautify.language": {
+      "js": {
+        "type": ["javascript", "json"],
+        "filename": [".jshintrc", ".jsbeautifyrc"]
+        // "ext": ["js", "json"]
+        // ^^ to set extensions to be beautified using the javascript beautifier
+      },
+      "css": ["css", "scss"],
+      "html": ["htm", "html", "django-html"]
+      // ^^ providing just an array sets the VS Code file type
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[json]": {
+      "editor.defaultFormatter": "HookyQR.beautify"
+    },
+    "workbench.iconTheme": "vscode-icons"
 }
